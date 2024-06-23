@@ -1,0 +1,246 @@
+/* intro 섹션 */
+.intro {
+    text-align: center;
+  }
+  .container {
+    padding: 250px 0 370px 0;
+  }
+  .intro_p {
+    gap: 780px;
+    padding-bottom: 30px;
+  }
+  .intro_p p {
+    position: relative;
+  }
+  .intro_p p + p:after {
+    content: '';
+    position: absolute;
+    right: 142%;
+    top: 15px;
+    width: 620px;
+    height: 1px;
+    background: var(--C-white);
+  }
+  
+  /* about 섹션 */
+  .about {
+    background: var(--C-white);
+    color: var(--black);
+    padding: 200px 0 0 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+  }
+  .about h2 {
+    font-size: 68px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .about em:nth-of-type(1) {
+    width: 40px;
+    height: 40px;
+    background: var(--black);
+    border-radius: 50%;
+  }
+  .about em:nth-of-type(2) {
+    width: 30px;
+    height: 30px;
+    background: var(--black);
+    border-radius: 50%;
+  }
+  .about em:nth-of-type(3) {
+    width: 20px;
+    height: 20px;
+    background: var(--black);
+    border-radius: 50%;
+  }
+  .about .circle_wrap {
+    padding-top: 40px;
+    gap: 75px;
+  }
+  .about video {
+    width: 763px;
+    height: 600px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 200px;
+  }
+  .para_wrap {
+    position: absolute;
+    bottom: 450px;
+    left: 0;
+    z-index: -1;
+  }
+  .para_wrap p:first-child {
+    font-size: 64px;
+  }
+  .para_wrap p {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .para_wrap p + p {
+    padding-top: 50px;
+  }
+  .goto_pj {
+    text-align: center;
+    padding: 250px 0 30px 0;
+  }
+  .goto_pj p {
+    font-size: var(--body-sl);
+    font-weight: 500;
+  }
+  .goto_pj span {
+    padding-top: 20px;
+    font-size: 45px;
+  }
+/* project */
+  [class^="project0"] {
+    position: relative;
+  }
+  .project01:before,
+  .project03:before,
+  .project05:before {
+    content: '';
+    position: absolute;
+    left: 400px;
+    top: 0;
+    width: 450px;
+    height: 100%;
+    background: #ddd;
+    z-index: -1;
+  }
+  .project02:before,
+  .project04:before,
+  .project06:before {
+    content: '';
+    position: absolute;
+    right: 400px;
+    top: 0;
+    width: 450px;
+    height: 100%;
+    background: #ddd;
+    z-index: -1;
+  }
+  .project02 .content_wrap,
+  .project04 .content_wrap,
+  .project06 .content_wrap {
+    gap: 250px;
+  }
+  .tech_wrap {
+    gap: 20px;
+  }
+  .tech_wrap em {
+    font-weight: 800;
+    font-size: var(--body-sl);
+  }
+  .pj_p {
+    padding: 40px 0 40px 0;
+    font-size: var(--body-m);
+    position: relative;
+  }
+  .pj_p:after {
+    content: '';
+    width: 430px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--C-white);
+  }
+  .link_wrap {
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .link_wrap a span {
+    font-size: 45px;
+    vertical-align: top;
+  }
+  .circle_img_l {
+    position: absolute;
+    right: 710px;
+    bottom: 165px;
+    z-index: -1;
+  }
+  .circle_img_r {
+    position: absolute;
+    right: 640px;
+    bottom: 165px;
+    z-index: -1;
+  }
+  .project05 .project_img {
+    height: 850px;
+  }
+  .project05 .circle_img_l {
+    position: absolute;
+    right: 710px;
+    top: 210px;
+    z-index: -1;
+  }
+  .project06 .circle_img_r {
+    position: absolute;
+    right: 575px;
+    bottom: 165px;
+    z-index: -1;
+  }
+  .project05 .content_wrap {
+    padding-bottom: 0;
+  }
+
+  [class^="project"] strong {
+    font-weight: 500;
+    white-space: nowrap;
+    text-transform: capitalize;
+  }
+ 
+  .contact {
+    background: var(--C-white);
+    color: var(--black);
+    padding: 250px 260px 150px;
+  }
+  .contact h1 {
+    text-align: center;
+  }
+  .contact p {
+    font-size: var(--body-l);
+    text-align: center;
+    padding: 80px 0 120px 0;
+  }
+  .contact_way {
+    font-size: var(--body-l);
+    gap: 280px;
+    justify-content: space-between;
+    padding-left: 100px;
+  }
+  .contact_way li {
+    position: relative;
+  }
+  .contact_way li:before {
+    content: '';
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    left: -45px;
+    top: -0;
+    background: url(/images/location_on_24dp_FILL1_wght400_GRAD0_opsz24\ \(1\).svg) no-repeat 50% 50% / 100%;
+  }
+  .contact_way li:nth-of-type(2):before {
+    content: '';
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    left: -45px;
+    top: -0;
+    background: url(/images/call_24dp_FILL1_wght400_GRAD0_opsz24\ \(1\).svg) no-repeat 50% 50% / 100%;
+  }
+  .contact_way li:nth-of-type(3):before {
+    content: '';
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    left: -45px;
+    top: -0;
+    background: url(/images/mail_24dp_FILL1_wght400_GRAD0_opsz24\ \(1\).svg) no-repeat 50% 50% / 100%;
+  }
+  .contact_way li>em {
+    font-weight: 700;
+  }
