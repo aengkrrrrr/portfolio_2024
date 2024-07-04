@@ -65,7 +65,7 @@
     display: block;
     margin-top: 200px;
   }
-  /* @keyframes para {
+  @keyframes para {
     0% {
       transform: translateX(0%);
     }
@@ -80,7 +80,7 @@
     100% {
       transform: translateX(-100%)
     }
-  } */
+  } 
 
   .para_wrap {
     position: absolute;
@@ -90,13 +90,13 @@
   }
   .para_wrap p:first-child {
     font-size: 64px;
-    animation: para 10s linear infinite;
+    animation: para 40s linear infinite;
   }
   .para_wrap p:nth-of-type(2) {
-    animation: para2 10s linear infinite;
+    animation: para2 40s linear infinite;
   }
   .para_wrap p:last-child {
-    animation: para 10s linear infinite;
+    animation: para 40s linear infinite;
   }
   .para_wrap p {
     font-weight: 500;
