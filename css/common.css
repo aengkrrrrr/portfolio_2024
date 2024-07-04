@@ -105,14 +105,27 @@ h1{
   cursor: pointer;
   transition: 0.2s;
 }
-
-
-
+.second_font {
+  font-family: 'Yapari Trial', sans-serif;
+}
 
 #header {
-    padding: 15px 70px;
-    justify-content: space-between;
-    font-size: var(--body-l);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  background:var(--C-secondary);
+}
+
+#header .header_ct{
+  padding: 15px 70px;
+  justify-content: space-between;
+  font-size: var(--body-l);
+
+    
 }
 .logo {
   width: 95px;
@@ -120,7 +133,7 @@ h1{
 
 }
 .gnb_wrap {
-  gap: 45px;
+  gap: 65px;
 }
 .util {
   gap: 40px;
@@ -140,13 +153,7 @@ h1{
   height: 625px;
   margin-bottom: 100px;
 }
-/* .project_img_l {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 930px;
-  height: 625px;
-} */
+
 .circle_img_r,
 .circle_img_l{
   width: 500px;
@@ -171,4 +178,65 @@ h1{
   padding: 50px 0;
   text-align: center;
   font-size: var(--body-m);
+}
+.option {
+  position: fixed;
+  right: 80px;
+  bottom: 30px;
+  gap: 20px;
+  z-index: 100;
+}
+.option .upto_top,
+.option .board{
+  width: 65px;
+  height: 65px;
+  background: var(--white);
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 1px 1px 3px var(--C-secondary);
+}
+.upto_top span,
+.board span {
+ font-size: 30px;
+}
+.board:hover::after{
+  opacity: 1;
+}
+
+.board::after {
+  opacity: 0;
+  content: '질문하기';
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: -50px;
+  width: 77px;
+  height: 32px;
+  color: var(--black);
+  border-radius: 5px;
+  background: var(--C-white);
+  padding: 8px 10px;
+  transition: 0.2s;
+}
+
+.link_wrap span {
+  position: relative;
+}
+.link_wrap span:hover::after{
+  opacity: 1;
+}
+.link_wrap span::after {
+  opacity: 0;
+  content: '사이트가기';
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -50px;
+  color: var(--black);
+  border-radius: 5px;
+  background: var(--C-white);
+  padding: 8px 10px;
+  transition: 0.2s;
+  font-size: 18px;
+  font-family: 'SUIT', sans-serif;
 }
