@@ -65,46 +65,31 @@
     display: block;
     margin-top: 200px;
   }
-  @keyframes para {
-    0% {
-      transform: translateX(0%);
-    }
-    50% {
-      transform: translateX(100%)
-    }
-  }
-  @keyframes para2 {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%)
-    }
-  } 
 
-  .para_wrap {
-    position: absolute;
-    bottom: 450px;
-    left: 0;
+
+  [class^="para_wrap"] {
+    display: flex;
+    position: absolute; /* absolute로 변경 */
     z-index: -1;
   }
-  .para_wrap p:first-child {
-    font-size: 64px;
-    animation: para 40s linear infinite;
+  .para_wrap {
+    bottom:35%;
   }
-  .para_wrap p:nth-of-type(2) {
-    animation: para2 40s linear infinite;
+  .para_wrap02 {
+    bottom:30%;
   }
-  .para_wrap p:last-child {
-    animation: para 40s linear infinite;
+  .para_wrap03 {
+    bottom:25%;
+  }
+
+  [class^="para_wrap"] p {
+    flex: 1;
+    white-space: nowrap;
+    font-weight: 500;
+    text-align: justify;        
   }
   .para_wrap p {
-    font-weight: 500;
-    white-space: nowrap;
-    animation: para 10s linear infinite;
-  }
-  .para_wrap p + p {
-    padding-top: 50px;
+    font-size: 64px;
   }
   .goto_pj {
     text-align: center;
@@ -118,6 +103,7 @@
     padding-top: 20px;
     font-size: 45px;
   }
+  
 /* project */
   [class^="project0"] {
     position: relative;

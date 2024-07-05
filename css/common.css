@@ -25,7 +25,7 @@ body {
 }
 
 
-body {font-family: 'SUIT', sans-serif; background-color: var(--C-secondary); color: var(--C-white);}
+body {font-family: 'SUIT', sans-serif; background-color: var(--C-secondary); color: var(--C-white); overflow-x: hidden;}
 
 .hidden {
   position: relative;
