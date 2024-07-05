@@ -1,3 +1,12 @@
+AOS.init();
+
+function startBg(){
+  document.querySelector('.start_bg').classList.add('hide');
+  // document.querySelector('body').style.overflow='hidden';
+}
+
+setTimeout(startBg, 2500);
+
 // header 메뉴 이벤트 
 const header = document.querySelector('#header');
 const menu01 = header.querySelector('.intro_sc');

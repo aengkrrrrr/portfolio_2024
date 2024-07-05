@@ -172,7 +172,7 @@ h1{
   }
 }
 [class^="circle_img"] {
-  animation: circle 10s infinite;
+  animation: circle 15s infinite;
 }
 #footer {
   padding: 50px 0;
